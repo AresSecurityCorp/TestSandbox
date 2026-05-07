@@ -1,3 +1,4 @@
+/// <reference types="node" />
 //import { test, expect, type Page, type Locator } from '@playwright/test';
 import { test, expect, type Page, type Locator, Browser, BrowserContext } from '@playwright/test';
 // @ts-ignore
