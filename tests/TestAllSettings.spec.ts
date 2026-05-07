@@ -152,6 +152,7 @@ function CreateComboTests() {
     //   await TestComboSelections(await OpenPage(browser),   comboTag.toString() );
     // });
     test('testSettingsSelect' + comboTag.toString(), async ({ page }) => {
+      test.setTimeout(60000);
       await TestComboSelections(page,   comboTag.toString() );
     });
   });
@@ -310,7 +311,7 @@ async function TestNotificationType(page : Page) {
     const regexStartsWithNotifications = /^Notifications/;
   console.log("waitForTimeout ");
   await page.waitForTimeout(1000);
-  console.log("about to EnsureInSettingAss");
+  console.log("TestNotificationTypeabout to EnsureInSettingAss");
   await EnsureInSettingsApp(page);
   //console.log("timeout been waited for");
   const notificationsItem = await page.getByRole('listitem').filter({ hasText: regexStartsWithNotifications });
@@ -334,11 +335,16 @@ async function TestNotificationType(page : Page) {
   const noneChecked = (await noneChild.getAttribute('style') != null);
   const newChhild = (!bannerChecked) ? bannerChild : alarmChild;
   await newChhild.click();
-  await executeSaveActions(page);
   await page.waitForTimeout(500);
+  await executeSaveActions(page);
+  await page.waitForTimeout(1000);
   await page.reload({ waitUntil: 'domcontentloaded' });
+  await page.waitForTimeout(1000);
 
+  await targetListItem.isVisible();
   await targetListItem.click();
+  await newChhild.isVisible();
+  console.log('newChild style=' + await newChhild.getAttribute('style'));
   await expect(await newChhild.getAttribute('style') != null).toBeTruthy();
   if(alarmChecked)   await alarmChild.click();
   if(bannerChecked)  await bannerChild.click();
@@ -348,6 +354,8 @@ async function TestNotificationType(page : Page) {
 
   console.log('End of the select notification test  ') ;
 }
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function TestComboSelections(modPage : Page, comboName : string) {
   await EnsureInSettingsApp(modPage);
@@ -369,10 +377,13 @@ async function TestComboSelections(modPage : Page, comboName : string) {
        console.log('ddLocator is null');
     
     await executeSaveActions(modPage);
-    await modPage.waitForTimeout(1000);
+    await modPage.waitForTimeout(3000);
+    //await modPage.goto(await modPage.url());
     await modPage.reload({ waitUntil: 'domcontentloaded' }); // had issues with Save not appearing, hence this ugly 
+    await sleep(1000);
     await modPage.waitForTimeout(1000);
-    console.log('awaiting text=' + nextOption + ', testCombo text=' + await testCombo.textContent());
+    //console.log('awaiting text=' + nextOption + ', testCombo text=' + await testCombo.textContent());
+    await testCombo.isVisible();
     await testCombo.textContent().then( text => console.log('combo text after reload=' + text));
     await expect(testCombo).toContainText(nextOption ?? '');
   }

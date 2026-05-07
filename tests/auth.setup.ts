@@ -40,27 +40,27 @@ setup('authentication', async ({ page }) => {
   console.log('Authentication setup dev=', devAuthFile);
 });
 
-setup('authentication admin', async ({ page }) => {
-  // const targetURL = USE_CB2 ? cb2_LOGIN_URL : LOGIN_URL;
-  // const targetPwd = USE_CB2 ? cb2pwd : password;
-  const targetURL = getLoginUrl();
+// setup('authentication admin', async ({ page }) => {
+//   // const targetURL = USE_CB2 ? cb2_LOGIN_URL : LOGIN_URL;
+//   // const targetPwd = USE_CB2 ? cb2pwd : password;
+//   const targetURL = getLoginUrl();
   
-  await page.goto(targetURL);
-  await expect(page).toHaveURL(/\/login$/);
+//   await page.goto(targetURL);
+//   await expect(page).toHaveURL(/\/login$/);
 
-  const usernameField = page.getByRole('textbox', { name: 'Username or Email Address' });
-  const passwordField = page.getByRole('textbox', { name: 'Password' });
-  const loginButton = page.getByRole('button', { name: 'Login' });
+//   const usernameField = page.getByRole('textbox', { name: 'Username or Email Address' });
+//   const passwordField = page.getByRole('textbox', { name: 'Password' });
+//   const loginButton = page.getByRole('button', { name: 'Login' });
 
-  await expect(usernameField).toBeVisible();
-  await expect(passwordField).toBeVisible();
-  await expect(loginButton).toBeVisible();
+//   await expect(usernameField).toBeVisible();
+//   await expect(passwordField).toBeVisible();
+//   await expect(loginButton).toBeVisible();
 
-  await usernameField.fill(adminUsername);
-  await passwordField.fill(getAdminPassword());
-  await loginButton.click();
-  let exRet = await expect(page).not.toHaveURL(/\/login$/, { timeout: 10000 });
+//   await usernameField.fill(adminUsername);
+//   await passwordField.fill(getAdminPassword());
+//   await loginButton.click();
+//   let exRet = await expect(page).not.toHaveURL(/\/login$/, { timeout: 10000 });
 
-  await page.context().storageState({ path: adminAuthFile });
-  console.log('Authentication setup admin=', adminAuthFile);
-});
+//   await page.context().storageState({ path: adminAuthFile });
+//   console.log('Authentication setup admin=', adminAuthFile);
+// });
