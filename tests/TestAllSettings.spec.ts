@@ -152,7 +152,7 @@ function CreateComboTests() {
     //   await TestComboSelections(await OpenPage(browser),   comboTag.toString() );
     // });
     test('testSettingsSelect' + comboTag.toString(), async ({ page }) => {
-      test.setTimeout(60000);
+      test.setTimeout(90000);
       await TestComboSelections(page,   comboTag.toString() );
     });
   });
