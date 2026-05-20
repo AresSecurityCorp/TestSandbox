@@ -1,0 +1,458 @@
+STARTING RUN Tue 05/19/2026 13:33:02.22 
+TestSettings.spec.ts loaded
+creating test for notification  0
+creating test for notification  1
+creating test for combo tag Coordinate System
+creating test for combo tag Scroll Bars
+creating test for combo tag Ground Distance/Speed
+
+Running 2 tests using 1 worker
+
+
+[1A[2K[1/2] [setup] › tests\auth.setup.ts:15:6 › authentication
+[1A[2K[setup] › tests\auth.setup.ts:15:6 › authentication
+Authentication setup dev= C:\TestSandbox\playwright\.auth\user.json
+
+
+[1A[2KTestSettings.spec.ts loaded
+
+[1A[2Kcreating test for notification  0
+
+[1A[2Kcreating test for notification  1
+
+[1A[2Kcreating test for combo tag Coordinate System
+
+[1A[2Kcreating test for combo tag Scroll Bars
+
+[1A[2Kcreating test for combo tag Ground Distance/Speed
+
+[1A[2K[2/2] [webkit] › tests\TestAllSettings.spec.ts:190:5 › testUploadUserPhoto
+[1A[2K[webkit] › tests\TestAllSettings.spec.ts:190:5 › testUploadUserPhoto
+Running testUploadUserPhoto
+
+[1A[2K  2 passed (7.4s)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
+ENDING RUN Tue 05/19/2026 13:33:12.37 
+STARTING RUN Tue 05/19/2026 13:33:27.84 
+TestSettings.spec.ts loaded
+creating test for notification  0
+creating test for notification  1
+creating test for combo tag Coordinate System
+creating test for combo tag Scroll Bars
+creating test for combo tag Ground Distance/Speed
+
+Running 11 tests using 1 worker
+
+
+[1A[2K[1/11] [setup] › tests\auth.setup.ts:15:6 › authentication
+[1A[2K[setup] › tests\auth.setup.ts:15:6 › authentication
+Authentication setup dev= C:\TestSandbox\playwright\.auth\user.json
+
+
+[1A[2KTestSettings.spec.ts loaded
+
+[1A[2Kcreating test for notification  0
+
+[1A[2Kcreating test for notification  1
+
+[1A[2Kcreating test for combo tag Coordinate System
+
+[1A[2Kcreating test for combo tag Scroll Bars
+
+[1A[2Kcreating test for combo tag Ground Distance/Speed
+
+[1A[2K[2/11] [chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_0
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_0
+Running TestSettingsAllowNotification_0
+
+[1A[2KTesting AMAccess
+
+[1A[2Ktoggled allow notification to true
+
+[1A[2Ktoggled allow notification back to false
+
+[1A[2KEnd of the allow notification test  
+
+[1A[2K[3/11] [chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_1
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_1
+Running TestSettingsAllowNotification_1
+
+[1A[2KTesting Advanced Reporting
+
+[1A[2Ktoggled allow notification to false
+
+[1A[2Ktoggled allow notification back to true
+
+[1A[2KEnd of the allow notification test  
+
+[1A[2K[4/11] [chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectCoordinate System
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectCoordinate System
+Running testSettingsSelectCoordinate System
+
+[1A[2Kcombo text after reload=Degrees, Decimal Minutes
+
+[1A[2Kcombo text after reload=Decimal Degrees
+
+[1A[2Kcombo text after reload=Degrees, Minutes, Seconds
+
+[1A[2K[5/11] [chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectScroll Bars
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectScroll Bars
+Running testSettingsSelectScroll Bars
+
+[1A[2Kcombo text after reload=Hidden
+
+[1A[2Kcombo text after reload=Visible
+
+[1A[2K[6/11] [chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectGround Distance/Speed
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectGround Distance/Speed
+Running testSettingsSelectGround Distance/Speed
+
+[1A[2Kcombo text after reload=Metric
+
+[1A[2Kcombo text after reload=Imperial
+
+[1A[2K[7/11] [chromium] › tests\TestAllSettings.spec.ts:161:5 › TestSettingsModifyCellPhone
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:161:5 › TestSettingsModifyCellPhone
+Running TestSettingsModifyCellPhone
+
+[1A[2KCurrent storage state file devAuthFile: C:\TestSandbox\tests\playwright\.auth\user.json
+
+[1A[2K[8/11] [chromium] › tests\TestAllSettings.spec.ts:170:5 › TestSettingsModifyOfficePhone
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:170:5 › TestSettingsModifyOfficePhone
+Running TestSettingsModifyOfficePhone
+
+[1A[2K[9/11] [chromium] › tests\TestAllSettings.spec.ts:174:5 › testSettingsTimeDisplay
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:174:5 › testSettingsTimeDisplay
+Running testSettingsTimeDisplay
+
+[1A[2Kradio input value=12-hour, isChecked=true
+
+[1A[2Kradio input value=24-hour, isChecked=false
+
+[1A[2Kradio 0 is org, 1 is test
+
+[1A[2KtestSelectTimeDisplay, clicking test radio24-hour
+
+[1A[2Kabout to reload
+
+[1A[2KtestSelectTimeDisplay, clicking org radio12-hour
+
+[1A[2K[10/11] [chromium] › tests\TestAllSettings.spec.ts:178:5 › TestSettingsNotificationType
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:178:5 › TestSettingsNotificationType
+Running TestSettingsNotificationType
+
+[1A[2KwaitForTimeout 
+
+[1A[2KTestNotificationTypeabout to EnsureInSettingAss
+
+[1A[2KnewChild style=border: 1px solid rgb(77, 181, 244);
+
+[1A[2KEnd of the select notification test  
+
+[1A[2K[11/11] [chromium] › tests\TestAllSettings.spec.ts:190:5 › testUploadUserPhoto
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:190:5 › testUploadUserPhoto
+Running testUploadUserPhoto
+
+[1A[2K  11 passed (3.0m)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
+ENDING RUN Tue 05/19/2026 13:36:30.91 
+STARTING RUN Tue 05/19/2026 13:58:40.02 
+TestSettings.spec.ts loaded
+creating test for notification  0
+creating test for notification  1
+creating test for combo tag Coordinate System
+creating test for combo tag Scroll Bars
+creating test for combo tag Ground Distance/Speed
+
+Running 11 tests using 1 worker
+
+
+[1A[2K[1/11] [setup] › tests\auth.setup.ts:15:6 › authentication
+[1A[2K[setup] › tests\auth.setup.ts:15:6 › authentication
+Authentication setup dev= C:\TestSandbox\playwright\.auth\user.json
+
+
+[1A[2KTestSettings.spec.ts loaded
+
+[1A[2Kcreating test for notification  0
+
+[1A[2Kcreating test for notification  1
+
+[1A[2Kcreating test for combo tag Coordinate System
+
+[1A[2Kcreating test for combo tag Scroll Bars
+
+[1A[2Kcreating test for combo tag Ground Distance/Speed
+
+[1A[2K[2/11] [chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_0
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_0
+Running TestSettingsAllowNotification_0
+
+[1A[2KTesting AMAccess
+
+[1A[2Ktoggled allow notification to true
+
+[1A[2Ktoggled allow notification back to false
+
+[1A[2KEnd of the allow notification test  
+
+[1A[2K[3/11] [chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_1
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_1
+Running TestSettingsAllowNotification_1
+
+[1A[2KTesting Advanced Reporting
+
+[1A[2Ktoggled allow notification to false
+
+[1A[2Ktoggled allow notification back to true
+
+[1A[2KEnd of the allow notification test  
+
+[1A[2K[4/11] [chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectCoordinate System
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectCoordinate System
+Running testSettingsSelectCoordinate System
+
+[1A[2Kcombo text after reload=Degrees, Decimal Minutes
+
+[1A[2Kcombo text after reload=Decimal Degrees
+
+[1A[2Kcombo text after reload=Degrees, Minutes, Seconds
+
+[1A[2K[5/11] [chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectScroll Bars
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectScroll Bars
+Running testSettingsSelectScroll Bars
+
+[1A[2Kcombo text after reload=Hidden
+
+[1A[2Kcombo text after reload=Visible
+
+[1A[2K[6/11] [chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectGround Distance/Speed
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectGround Distance/Speed
+Running testSettingsSelectGround Distance/Speed
+
+[1A[2Kcombo text after reload=Metric
+
+[1A[2Kcombo text after reload=Imperial
+
+[1A[2K[7/11] [chromium] › tests\TestAllSettings.spec.ts:161:5 › TestSettingsModifyCellPhone
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:161:5 › TestSettingsModifyCellPhone
+Running TestSettingsModifyCellPhone
+
+[1A[2KCurrent storage state file devAuthFile: C:\TestSandbox\tests\playwright\.auth\user.json
+
+[1A[2K[8/11] [chromium] › tests\TestAllSettings.spec.ts:170:5 › TestSettingsModifyOfficePhone
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:170:5 › TestSettingsModifyOfficePhone
+Running TestSettingsModifyOfficePhone
+
+[1A[2K[9/11] [chromium] › tests\TestAllSettings.spec.ts:174:5 › testSettingsTimeDisplay
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:174:5 › testSettingsTimeDisplay
+Running testSettingsTimeDisplay
+
+[1A[2Kradio input value=12-hour, isChecked=true
+
+[1A[2Kradio input value=24-hour, isChecked=false
+
+[1A[2Kradio 0 is org, 1 is test
+
+[1A[2KtestSelectTimeDisplay, clicking test radio24-hour
+
+[1A[2Kabout to reload
+
+[1A[2KtestSelectTimeDisplay, clicking org radio12-hour
+
+[1A[2K[10/11] [chromium] › tests\TestAllSettings.spec.ts:178:5 › TestSettingsNotificationType
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:178:5 › TestSettingsNotificationType
+Running TestSettingsNotificationType
+
+[1A[2KwaitForTimeout 
+
+[1A[2KTestNotificationTypeabout to EnsureInSettingAss
+
+[1A[2KnewChild style=border: 1px solid rgb(77, 181, 244);
+
+[1A[2KEnd of the select notification test  
+
+[1A[2K[11/11] [chromium] › tests\TestAllSettings.spec.ts:190:5 › testUploadUserPhoto
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:190:5 › testUploadUserPhoto
+Running testUploadUserPhoto
+
+[1A[2K  11 passed (3.2m)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
+ENDING RUN Tue 05/19/2026 14:01:53.10 
+STARTING RUN Wed 05/20/2026  4:00:02.28 
+TestSettings.spec.ts loaded
+creating test for notification  0
+creating test for notification  1
+creating test for combo tag Coordinate System
+creating test for combo tag Scroll Bars
+creating test for combo tag Ground Distance/Speed
+
+Running 11 tests using 1 worker
+
+
+[1A[2K[1/11] [setup] › tests\auth.setup.ts:15:6 › authentication
+[1A[2K[setup] › tests\auth.setup.ts:15:6 › authentication
+Authentication setup dev= C:\TestSandbox\playwright\.auth\user.json
+
+
+[1A[2KTestSettings.spec.ts loaded
+
+[1A[2Kcreating test for notification  0
+
+[1A[2Kcreating test for notification  1
+
+[1A[2Kcreating test for combo tag Coordinate System
+
+[1A[2Kcreating test for combo tag Scroll Bars
+
+[1A[2Kcreating test for combo tag Ground Distance/Speed
+
+[1A[2K[2/11] [chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_0
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_0
+Running TestSettingsAllowNotification_0
+
+[1A[2KTesting AMAccess
+
+[1A[2Ktoggled allow notification to false
+
+[1A[2Ktoggled allow notification back to true
+
+[1A[2KEnd of the allow notification test  
+
+[1A[2K[3/11] [chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_1
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:139:9 › TestSettingsAllowNotification_1
+Running TestSettingsAllowNotification_1
+
+[1A[2KTesting Advanced Reporting
+
+[1A[2Ktoggled allow notification to false
+
+[1A[2Ktoggled allow notification back to true
+
+[1A[2KEnd of the allow notification test  
+
+[1A[2K[4/11] [chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectCoordinate System
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectCoordinate System
+Running testSettingsSelectCoordinate System
+
+[1A[2Kcombo text after reload=Degrees, Decimal Minutes
+
+[1A[2Kcombo text after reload=Decimal Degrees
+
+[1A[2Kcombo text after reload=Degrees, Minutes, Seconds
+
+[1A[2K[5/11] [chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectScroll Bars
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectScroll Bars
+Running testSettingsSelectScroll Bars
+
+[1A[2Kcombo text after reload=Hidden
+
+[1A[2Kcombo text after reload=Visible
+
+[1A[2K[6/11] [chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectGround Distance/Speed
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:154:9 › testSettingsSelectGround Distance/Speed
+Running testSettingsSelectGround Distance/Speed
+
+[1A[2Kcombo text after reload=Metric
+
+[1A[2Kcombo text after reload=Imperial
+
+[1A[2K[7/11] [chromium] › tests\TestAllSettings.spec.ts:161:5 › TestSettingsModifyCellPhone
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:161:5 › TestSettingsModifyCellPhone
+Running TestSettingsModifyCellPhone
+
+[1A[2KCurrent storage state file devAuthFile: C:\TestSandbox\tests\playwright\.auth\user.json
+
+[1A[2K  1) [chromium] › tests\TestAllSettings.spec.ts:161:5 › TestSettingsModifyCellPhone ────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: getByRole('listitem').filter({ hasText: 'CELL PHONE' })
+    Expected substring: [32m"(123) 456 - 7890"[39m
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('listitem').filter({ hasText: 'CELL PHONE' })[22m
+
+
+      426 |   await page.waitForTimeout(3000); // when running with approval it took two seconds for phone to switch back after the Third message box appeared
+      427 |   await page.reload({ waitUntil: 'domcontentloaded' });
+    > 428 |   await expect(targetPhone).toContainText(newPhoneNumber, { timeout: 10000 });
+          |                             ^
+      429 |
+      430 |   await targetPhone.hover();
+      431 |   await pencilEditIcon.click();
+        at TestModifyPhone (C:\TestSandbox\tests\TestAllSettings.spec.ts:428:29)
+        at C:\TestSandbox\tests\TestAllSettings.spec.ts:167:3
+
+    Error Context: test-results\TestAllSettings-TestSettingsModifyCellPhone-chromium\error-context.md
+
+
+
+[1A[2KTestSettings.spec.ts loaded
+
+[1A[2Kcreating test for notification  0
+
+[1A[2Kcreating test for notification  1
+
+[1A[2Kcreating test for combo tag Coordinate System
+
+[1A[2Kcreating test for combo tag Scroll Bars
+
+[1A[2Kcreating test for combo tag Ground Distance/Speed
+
+[1A[2K[8/11] [chromium] › tests\TestAllSettings.spec.ts:170:5 › TestSettingsModifyOfficePhone
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:170:5 › TestSettingsModifyOfficePhone
+Running TestSettingsModifyOfficePhone
+
+[1A[2K[9/11] [chromium] › tests\TestAllSettings.spec.ts:174:5 › testSettingsTimeDisplay
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:174:5 › testSettingsTimeDisplay
+Running testSettingsTimeDisplay
+
+[1A[2Kradio input value=12-hour, isChecked=true
+
+[1A[2Kradio input value=24-hour, isChecked=false
+
+[1A[2Kradio 0 is org, 1 is test
+
+[1A[2KtestSelectTimeDisplay, clicking test radio24-hour
+
+[1A[2Kabout to reload
+
+[1A[2KtestSelectTimeDisplay, clicking org radio12-hour
+
+[1A[2K[10/11] [chromium] › tests\TestAllSettings.spec.ts:178:5 › TestSettingsNotificationType
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:178:5 › TestSettingsNotificationType
+Running TestSettingsNotificationType
+
+[1A[2KwaitForTimeout 
+
+[1A[2KTestNotificationTypeabout to EnsureInSettingAss
+
+[1A[2KnewChild style=border: 1px solid rgb(77, 181, 244);
+
+[1A[2KEnd of the select notification test  
+
+[1A[2K[11/11] [chromium] › tests\TestAllSettings.spec.ts:190:5 › testUploadUserPhoto
+[1A[2K[chromium] › tests\TestAllSettings.spec.ts:190:5 › testUploadUserPhoto
+Running testUploadUserPhoto
+
+[1A[2K  1 failed
+    [chromium] › tests\TestAllSettings.spec.ts:161:5 › TestSettingsModifyCellPhone ─────────────────
+  10 passed (3.5m)
+
+[36m  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.[39m
